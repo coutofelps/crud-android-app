@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_shade_1"
+    android:padding="4dp">
+
+    <!-- Text view to display a course name -->
+    <TextView
+        android:id="@+id/tvCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="4dp"
+        android:text="Course name"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Image view to display a course image -->
+    <ImageView
+        android:id="@+id/ivCourse"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvCourseName"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- Text view to display a course description -->
+    <TextView
+        android:id="@+id/tvCourseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCourseName"
+        android:layout_margin="4dp"
+        android:layout_toEndOf="@id/ivCourse"
+        android:layout_toRightOf="@id/ivCourse"
+        android:padding="3dp"
+        android:text="Description"
+        android:textColor="@color/white" />
+
+    <!-- Text view to display a course recommendation -->
+    <TextView
+        android:id="@+id/tvSuitedFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCourseDescription"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/ivCourse"
+        android:padding="3dp"
+        android:text="Suited for"
+        android:textColor="@color/white" />
+
+    <!-- Text view to display a course price -->
+    <TextView
+        android:id="@+id/tvCoursePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSuitedFor"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/ivCourse"
+        android:padding="3dp"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCoursePrice"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Button to edit a course -->
+        <Button
+            android:id="@+id/btnEditCourse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="Edit course"
+            android:textAllCaps="false" />
+
+        <!-- Button to see the course details -->
+        <Button
+            android:id="@+id/btnCheckDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="Check details"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>
