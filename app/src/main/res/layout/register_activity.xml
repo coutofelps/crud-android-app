@@ -50,7 +50,7 @@
         app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tiePassword"
+            android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
@@ -77,7 +77,7 @@
         app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tieConfirmPassword"
+            android:id="@+id/edtConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
@@ -89,19 +89,20 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Button to create an account -->
+
+    <!-- Text view to display a text and after click we will open the login page -->
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tilConfirmPassword"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="39dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/button_background"
         android:text="Register"
         android:textAllCaps="false" />
 
-    <!-- Text view to display a text and after click we will open the login page -->
     <TextView
         android:id="@+id/tvUserLogin"
         android:layout_width="match_parent"
