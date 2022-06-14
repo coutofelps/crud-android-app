@@ -8,4 +8,4 @@ Repositório criado para ser utilizado pelo projeto de um CRUD construído para 
 
 ## Atualizações Futuras
 
-* Outras novas aulas podem ser adicionadas :)
+* Outras novas features serão adicionadas :)
